@@ -14,8 +14,12 @@ class Index_Model extends Utilities_For_Models {
 		$this -> db = new MysqlImproved_Driver;
 	}
 
+	public function getTitle(){
+		return 'Testtitle';
+	}
 
-
-
+	public function getContent(){
+		return 'Testcontent';
+	}
 }	
 ?>

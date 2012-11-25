@@ -12,10 +12,12 @@ class Index_Controller
     	$indexModel = new Index_Model;
 
 		$view = new View_Model($this->template);
-
-		$view->assign('data' , $data);
+		
+		$title = $indexModel->getTitle();
+		$content = $indexModel->getContent();
+		
+		$view->assign('title' , $title);
+		$view->assign('content' , $content);
 
     }
-
-
 }
